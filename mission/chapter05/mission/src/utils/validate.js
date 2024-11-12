@@ -16,19 +16,7 @@ function validateUser(values){
     return errors;
 }
 function validateSignup(values){
-    const errors ={
-        email : '',
-        password : '',
-        passwordCheck : '',
-    }
-
-    if (emailPattern.test(values.email) === false){
-        errors.email = '올바른 이메일 형식이 아닙니다. 다시 확인해주세요!'
-    }
-
-    if(values.password.length<8 || values.password.length > 16){
-        errors.password = '비밀번호는 8 ~ 16자 사이로 입력해주세요!'
-    }
+    const errors = validateUser(values);
     if(values.password !== values.passwordCheck){
         errors.passwordCheck = "비밀번호와 일치하지 않습니다"
     }

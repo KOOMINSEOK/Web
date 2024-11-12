@@ -30,8 +30,6 @@ function useForm({initialValue, validate}){
     useEffect(()=>{
         const newErrors = validate(values);
         setErrors(newErrors);
-        console.log(values.password);
-        console.log(values.passwordCheck);
     },[validate,values])
     return {values, errors, touched, getTextInputProps}
 }

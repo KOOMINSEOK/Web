@@ -4,7 +4,7 @@ import CategoryPage from "./pages/categoryPage/categoryPage";
 import SearchPage from "./pages/basicPages/searchPage";
 import LoginPage from "./pages/basicPages/loginPage/loginPage";
 import SignupPage from "./pages/basicPages/signupPage/signupPage";
-import HomePage from "./pages/basicPages/homePage";
+import HomePage from "./pages/basicPages/homePage/homePage";
 import MovieRoute from "./pages/movieRoute/moveRoute";
 
 const router = createBrowserRouter([
