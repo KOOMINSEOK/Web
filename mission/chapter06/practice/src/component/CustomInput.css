@@ -1,0 +1,13 @@
+input{
+    border: none;
+    height: 40px;
+}
+.cusInput{
+    background-color: rgb(241, 146, 241);
+    color: white;
+
+}
+.updating{
+    background-color: rgb(172, 203, 48);
+    color: white;
+}

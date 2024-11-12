@@ -1,0 +1,14 @@
+.cusBtn{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(72, 72, 237);
+    color: white;
+    border-radius: 20px;
+    border: none;
+}
+.inputBtn{
+    background-color: rgb(148, 246, 136);
+    color: white;
+    border-radius: 20px;
+    border: none;
+}
