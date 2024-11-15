@@ -2,7 +2,7 @@ import useCustomFetch from "../../hooks/useCustomFetch"
 import { Link,useSearchParams } from 'react-router-dom';
 import MoviePoster from '../moviePoster/moviePoster';
 import * as S from '../../pages/basicPages/searchPage/styled/searchPage.style'
-import CardListSkeleton from "../Skeleton/card-list-skeleton";
+import MovieFrameList from "../Skeleton/movieFrameList";
 
 const SearchMovieList = ()=>{
     const [searchParams, setSearchParams] = useSearchParams({
@@ -17,7 +17,7 @@ const SearchMovieList = ()=>{
     }
     if(isLoading){
         return(
-                <CardListSkeleton number = {20}/>
+                <MovieFrameList number = {20}/>
         )
     }
 

@@ -1,12 +1,8 @@
-import { useState, useEffect } from 'react'
 import MoviePoster from '../../../components/moviePoster/moviePoster.jsx';
 import './moviesPages.css'
-import axios from "axios";
-import { useParams } from 'react-router-dom';
-import { axiosInstance } from '../../../apis/axios-instance.js';
 import useCustomFetch from '../../../hooks/useCustomFetch.js';
 import { Link } from "react-router-dom";
-import CardListSkeleton from '../../../components/Skeleton/card-list-skeleton.jsx';
+import MovieFrameList from '../../../components/Skeleton/movieFrameList.jsx';
 
 const APIurl={
   "now-playing" : '/movie/now_playing?language=ko-KR&page=1',
@@ -19,7 +15,7 @@ const MoviesPage = (props) => {
     const {category} = props
     const {data : movies, isLoading, isError} = useCustomFetch(APIurl[category]);
     if(isLoading){
-      return <CardListSkeleton number={20}/>
+      return <MovieFrameList number={20}/>
     }
     
     if(isError){

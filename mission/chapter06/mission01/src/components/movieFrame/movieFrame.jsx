@@ -1,6 +1,6 @@
-import * as S from './styled/card-skeleton.styled'
+import * as S from './styled/styled'
 
-const CardSkeleton = ()=>{
+const MovieFrame = ()=>{
     return(
         <S.Container>
             <S.CardMain/>
@@ -12,4 +12,4 @@ const CardSkeleton = ()=>{
     )
 }
 
-export default CardSkeleton;
+export default MovieFrame;
