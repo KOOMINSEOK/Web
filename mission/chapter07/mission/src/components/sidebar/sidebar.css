@@ -1,0 +1,17 @@
+ ul li {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: background-color 0.3s;
+}
+ul{
+    padding-left: 20px;
+    padding-right: 0px;
+}
+ul li:hover{
+    background-color: #333;
+    border-radius: 5px;
+}
